@@ -1,0 +1,15 @@
+[package]
+name = "extmacros"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+
+[dependencies]
+syn = { version = "^1", features = ["full", "parsing"] }
+proc-macro2 = { version = "1.0.32", default-features = false }
+extlog = "^0.1.8"
+extutils = { path = "../extutils-rs"}
+quote = "1.0"
